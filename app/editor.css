@@ -1,0 +1,12 @@
+/* app/editor.css - imported in editor layout if needed, or extend globals.css */
+/* Utility classes for editor buttons */
+
+@layer components {
+  .add-btn {
+    @apply flex items-center gap-1 text-xs px-2.5 py-1 rounded-md border border-border hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground;
+  }
+
+  .delete-btn {
+    @apply p-1.5 rounded-md hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors shrink-0;
+  }
+}
