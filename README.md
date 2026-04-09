@@ -1,4 +1,4 @@
-# CV Builder — MVP
+# CV Builder 
 
 Version-controlled CV builder with AI-powered section optimization and portfolio integration.
 
