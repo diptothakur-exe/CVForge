@@ -1,0 +1,28 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "regions": ["bom1"],
+  "functions": {
+    "app/api/parse/resume/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/ai/rewrite/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/ai/match/route.ts": {
+      "maxDuration": 30
+    },
+    "app/api/pdf/export/route.ts": {
+      "maxDuration": 15
+    }
+  },
+  "env": {
+    "OPENROUTER_API_KEY": "@openrouter_api_key",
+    "SUPABASE_URL": "@supabase_url",
+    "SUPABASE_ANON_KEY": "@supabase_anon_key",
+    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key"
+  }
+}
